@@ -25,7 +25,7 @@ const Login = (props) => {
         })
       .then(
         (data) => {
-          console.log("got here in handle submit")  //Works to here
+          console.log(data.sessionToken)
           
           props.updateToken(data.sessionToken);
         }
